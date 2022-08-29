@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\My_Portfolio\\Solid_Clean_Architecture_Template\\Core\\Core.csproj": {}
+    "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\My_Portfolio\\Solid_Clean_Architecture_Template\\Core\\Core.csproj": {
+    "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\My_Portfolio\\Solid_Clean_Architecture_Template\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\My_Portfolio\\Solid_Clean_Architecture_Template\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\My_Portfolio\\Solid_Clean_Architecture_Template\\Core\\obj\\",
+        "outputPath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

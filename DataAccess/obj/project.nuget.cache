@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YyZ5TmIU6qo5mEPIpqWDIgqKGWijMRjzf0zdjlb9yn6mAn23V/bCqyxfy4M5LG9jEY03PjhJMplZLHk84e7BBg==",
+  "dgSpecHash": "REzYZCzF/+DDn59rqGAqNyAFtXBamijhWugnUjR8Us6e/K2tMHVDHbSdY4e8We+mwa38VhghaWbjjcHu5QFsqA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\My_Portfolio\\Solid_Clean_Architecture_Template\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CCsogxnFHyqyarF7rc/nwtJ1gNKWPTJR6WV7jyHQFjryfKeHt/IKx/kwSYgp/+AdJZzpqV+LD0+Peu6gB2kukQ==",
+  "dgSpecHash": "XPqW+EWWqt/hER8M2sbt4iuS/Fvb4qOaKQE2qW2qgrDYB3NEeRxlTK0RfLcf5/AUvdyj7K58iCysK29TBw8MDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\My_Portfolio\\Solid_Clean_Architecture_Template\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
