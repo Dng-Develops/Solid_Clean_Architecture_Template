@@ -598,6 +598,19 @@
           }
         }
       },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1773,6 +1786,11 @@
         "version.txt"
       ]
     },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
@@ -1781,6 +1799,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Core >= 1.0.0",
       "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8"
     ]
@@ -1819,6 +1838,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Core\\Core.csproj"
+            },
             "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Entities\\Entities.csproj"
             }
