@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Concrete.EntitiyFramework.Context
+namespace DataAccess.Concrete.EntityFramework.Context
 {
     public class ApplicationDbContext : DbContext
     {

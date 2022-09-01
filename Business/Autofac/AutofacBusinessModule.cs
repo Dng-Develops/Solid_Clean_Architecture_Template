@@ -2,7 +2,6 @@
 using Business.Abstract;
 using Business.Concrete;
 using DataAccess.Abstract;
-using DataAccess.Concrete.EntitiyFramework;
 using DataAccess.Concrete.EntityFramework;
 using System;
 using System.Collections.Generic;

@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DataAccess",
-    "\\DataAccess\\Concrete"
+    "\\Core",
+    "\\Core\\DataAccess",
+    "\\DataAccess"
   ],
   "SelectedNode": "\\Solid_Clean_Architecture_Template.sln",
   "PreviewInSolutionExplorer": false

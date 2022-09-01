@@ -1,4 +1,4 @@
-using DataAccess.Concrete.EntitiyFramework.Context;
+using DataAccess.Concrete.EntityFramework.Context;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
