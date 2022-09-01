@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "AUPegPiDAtiRE6mOfvCUZfkx5Sm2+nsG56iX6PTSLHmQxJz5unNh6IdB2slv1tz2H4RCpsrwEU3eAcfoA2g2cA==",
+  "dgSpecHash": "1vUB2RepAQzJZR6B9OMpMJ1Yg+abV0tUjYKWUwasaU81NBmAU1JvAZM+r0fsbc5DKBgUvq5YKr3z50DfI5oHFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
+    "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

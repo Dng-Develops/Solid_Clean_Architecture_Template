@@ -126,3 +126,7 @@ C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Arc
 C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\WebApi\obj\Debug\net6.0\ref\WebApi.dll
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\WebApi\bin\Debug\net6.0\Business.dll
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\WebApi\bin\Debug\net6.0\Business.pdb
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\WebApi\bin\Debug\net6.0\Autofac.dll
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\WebApi\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll

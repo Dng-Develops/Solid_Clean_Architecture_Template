@@ -22,3 +22,10 @@ C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Arc
 C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\Business\obj\Debug\net6.0\refint\Business.dll
 C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\Business\obj\Debug\net6.0\Business.pdb
 C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\Business\obj\Debug\net6.0\ref\Business.dll
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\Business\bin\Debug\net6.0\Core.dll
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\Business\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\Business\bin\Debug\net6.0\Entities.dll
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\Business\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\Business\bin\Debug\net6.0\Entities.pdb
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\Business\bin\Debug\net6.0\Core.pdb
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\Business\obj\Debug\net6.0\Business.csproj.CopyComplete

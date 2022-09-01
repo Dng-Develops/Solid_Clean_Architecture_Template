@@ -2,8 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\DataAccess",
-    "\\DataAccess\\Concrete",
-    "\\DataAccess\\Concrete\\EntitiyFramework"
+    "\\DataAccess\\Concrete"
   ],
   "SelectedNode": "\\Solid_Clean_Architecture_Template.sln",
   "PreviewInSolutionExplorer": false
