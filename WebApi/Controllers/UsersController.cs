@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
+using Entities.Dtos;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,10 +19,18 @@ namespace WebApi.Controllers
 
         [HttpPost("add")]
 
-        public IActionResult Add(User user)
+        public IActionResult Add(AuthDto authDto)
         {
-            _userService.Add(user);
+            _userService.Add(authDto);
             return Ok("Data succefully added");
+        }
+
+        [HttpGet("getList")]
+
+        public IActionResult GetList()
+        {
+            
+            return Ok(_userService.GetList());
         }
     }
 }
