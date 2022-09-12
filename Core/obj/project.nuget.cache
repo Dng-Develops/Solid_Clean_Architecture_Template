@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "R/gDnmEoNVgcbnRMoApocBMMk0nEPNZN8MfIGQnqkSPtiBsitg7STFqsQvjJJ74nR3uwdeV1FE1/La6tkHogGw==",
+  "dgSpecHash": "sXwUAmIk9CMd2iE41E1sQ/gZxXUTSTn7UqjmWVhfaDIAPguvUj7Z4D8vRW/FV2m0MmQjvrWsWrwR74tBDxuYUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Core\\Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

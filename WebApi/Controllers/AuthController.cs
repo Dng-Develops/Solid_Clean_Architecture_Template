@@ -21,7 +21,11 @@ namespace WebApi.Controllers
         public IActionResult Register(RegisterAuthDto authDto)
         {
            var result = _authService.Register(authDto);
-            return Ok(result);
+            if (result.Success)
+            {
+             return Ok(result);
+            }
+            return BadRequest(result.Message);
         }
 
         [HttpPost("login")]
