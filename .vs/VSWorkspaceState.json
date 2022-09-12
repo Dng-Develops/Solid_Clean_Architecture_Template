@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Business",
+    "\\Business\\Abstract",
     "\\Core",
     "\\Core\\DataAccess",
-    "\\DataAccess"
+    "\\DataAccess",
+    "\\WebApi"
   ],
   "SelectedNode": "\\Solid_Clean_Architecture_Template.sln",
   "PreviewInSolutionExplorer": false

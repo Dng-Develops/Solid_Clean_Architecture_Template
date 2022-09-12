@@ -11,7 +11,8 @@ namespace Business.Abstract
 
     public interface IUserService
     {
-        void Add(AuthDto authDto);
+        void Add(RegisterAuthDto authDto);
         List<User> GetList();
+        User GetByEmail(string email);
     }
 }
