@@ -1,6 +1,8 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules.FluentValidation;
 using Core.Utilities.Hashing;
 using Entities.Dtos;
+using FluentValidation.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,16 +24,26 @@ namespace Business.Concrete
         {
             var user = _userService.GetByEmail(loginDto.Email);
             var result = HashingHelper.VerifyPasswordHash(loginDto.Password, user.PasswordHash, user.PasswordSalt);
-            if(result)
+            if (result)
             {
                 return "Login is successfully ";
             }
             return "User info is incorrect";
         }
 
-        public void Register(RegisterAuthDto registerDto)
+        public List<string> Register(RegisterAuthDto registerDto)
         {
-            _userService.Add(registerDto);
+            UserValidator userValidator = new UserValidator();
+            ValidationResult result = userValidator.Validate(registerDto);
+            List<string> resultList = new List<string>();
+            if (result.IsValid)
+            {
+                _userService.Add(registerDto);
+                resultList.Add("Registration complete");
+                return resultList;
+            }
+            resultList = result.Errors.Select(p => p.ErrorMessage).ToList();
+            return resultList;
         }
     }
 }

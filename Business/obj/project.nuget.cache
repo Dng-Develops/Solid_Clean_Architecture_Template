@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CqjfCSDs5hL30wYeevkTy0nYxb1kqPYMpgoWi3VnGh+76Ouk+Y5hCyIUzKZu3nRH0BIbjG+0n9uHD2DbXURT5g==",
+  "dgSpecHash": "V4PgOPos3LoEnVJ7tStr5wq/LFd0P39B5wsobOdixoxh7lrj4LsqC4TIgc3U/eEEMV0uFo9k6IJWfQZRh4ivww==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
+    "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

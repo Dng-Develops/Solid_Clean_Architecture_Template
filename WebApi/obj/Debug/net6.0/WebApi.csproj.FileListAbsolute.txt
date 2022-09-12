@@ -130,3 +130,4 @@ C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Arc
 C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\WebApi\bin\Debug\net6.0\Business.pdb
 C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\WebApi\bin\Debug\net6.0\Autofac.dll
 C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\WebApi\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\Hz.Ord.Prof.Dr.Deniz\Desktop\Web Uygulamalar\_Portfolio\Solid_Clean_Architecture_Template\WebApi\bin\Debug\net6.0\FluentValidation.dll
