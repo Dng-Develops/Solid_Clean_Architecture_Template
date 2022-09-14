@@ -2,6 +2,7 @@
 using Business.ValidationRules.FluentValidation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Hashing;
+using Core.Utilities.Result.Abstract;
 using Core.Utilities.Result.Concrete;
 using Entities.Dtos;
 using FluentValidation.Results;
@@ -33,29 +34,24 @@ namespace Business.Concrete
             return "User info is incorrect";
         }
 
-        public Result Register(RegisterAuthDto registerDto)
+        public IResult Register(RegisterAuthDto registerDto)
         {
             UserValidator userValidator = new UserValidator();
             ValidationTool.Validate(userValidator, registerDto);
 
             bool isExists = CheckIfEmailExists(registerDto.Email);
-            Result result = new Result();
+
 
             if (isExists)
             {
                 _userService.Add(registerDto);
-
-                result.Success = true;
-                result.Message = "Registration successfull";
-
+                return new SuccessResult("Registration successfull");
 
             }
             else
             {
-                result.Success = false;
-                result.Message = "This mail already exists";
+                return new ErrorResult("This mail already exists");
             }
-            return result;
         }
 
         bool CheckIfEmailExists(string email)
