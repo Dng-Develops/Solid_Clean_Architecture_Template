@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Business.ValidationRules.FluentValidation;
 using Core.CrossCuttingConcerns.Validation;
+using Core.Utilities.Business;
 using Core.Utilities.Hashing;
 using Core.Utilities.Result.Abstract;
 using Core.Utilities.Result.Concrete;
@@ -34,34 +35,46 @@ namespace Business.Concrete
             return "User info is incorrect";
         }
 
+        [ValidationAspect(typeof(UserValidator))]
         public IResult Register(RegisterAuthDto registerDto)
         {
-            UserValidator userValidator = new UserValidator();
-            ValidationTool.Validate(userValidator, registerDto);
+            int imgSize = 2;
+            //UserValidator userValidator = new UserValidator();
+            //ValidationTool.Validate(userValidator, registerDto);
 
-            bool isExists = CheckIfEmailExists(registerDto.Email);
+            IResult result = BusinessRules.Run(
+                CheckIfEmailExists(registerDto.Email),
+                CheckIfImgLessThanOneMb(imgSize)
+                );
 
-
-            if (isExists)
+            if (!result.Success)
             {
-                _userService.Add(registerDto);
-                return new SuccessResult("Registration successfull");
+                return result;
+            }
 
-            }
-            else
-            {
-                return new ErrorResult("This mail already exists");
-            }
+            _userService.Add(registerDto);
+            return new SuccessResult("Registration successfull");
+
+
         }
 
-        bool CheckIfEmailExists(string email)
+        private IResult CheckIfEmailExists(string email)
         {
             var list = _userService.GetByEmail(email);
             if (list != null)
             {
-                return false;
+                return new ErrorResult("This mail already exists");
             }
-            return true;
+            return new SuccessResult();
+        }
+
+        private IResult CheckIfImgLessThanOneMb(int imgSize)
+        {
+            if (imgSize > 1)
+            {
+                return new ErrorResult("Image too large! image size cannot be more than 1mb");
+            }
+            return new SuccessResult();
         }
     }
 }
