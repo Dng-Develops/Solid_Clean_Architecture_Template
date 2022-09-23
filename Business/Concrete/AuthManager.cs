@@ -36,6 +36,7 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(UserValidator))]
+        [LogAspect]
         public IResult Register(RegisterAuthDto registerDto)
         {
             int imgSize = 2;
