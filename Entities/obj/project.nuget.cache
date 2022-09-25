@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "FGtC3kYCcm/uBQBpwMb9asf8CcQt8z5sjEtqcnsCsPK1jd9wuwHhI5y/d+UjBEBxHQYfTeqgo8Fz6itqZY20wA==",
+  "dgSpecHash": "4kxpa2XXHsxXTJ/83TSLXw4eTP8mA4k1cAHkvNMdw831XQt7Qz/8vMlW/v3nTUasUBOk1w7p0E6wMeM5b316oQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\Desktop\\Web Uygulamalar\\_Portfolio\\Solid_Clean_Architecture_Template\\Entities\\Entities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\Hz.Ord.Prof.Dr.Deniz\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

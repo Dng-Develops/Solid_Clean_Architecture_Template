@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Validation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Business;
 using Core.Utilities.Hashing;
@@ -36,22 +37,19 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(UserValidator))]
-        [LogAspect]
         public IResult Register(RegisterAuthDto registerDto)
         {
-            int imgSize = 2;
-            //UserValidator userValidator = new UserValidator();
-            //ValidationTool.Validate(userValidator, registerDto);
+            int imgSize = 1;
 
-            IResult result = BusinessRules.Run(
-                CheckIfEmailExists(registerDto.Email),
-                CheckIfImgLessThanOneMb(imgSize)
-                );
+            //IResult result = BusinessRules.Run(
+            //    CheckIfEmailExists(registerDto.Email),
+            //    CheckIfImgLessThanOneMb(imgSize)
+            //    );
 
-            if (!result.Success)
-            {
-                return result;
-            }
+            //if (!result.Success)
+            //{
+            //    return result;
+            //}
 
             _userService.Add(registerDto);
             return new SuccessResult("Registration successfull");

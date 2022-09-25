@@ -29,7 +29,7 @@ namespace Business.Concrete
             user.Id = 0;
             user.Name = authDto.Name;
             user.Email = authDto.Email;
-            user.ImageUrl = authDto.ImageUrl;
+            user.ImageUrl = "";
             user.PasswordHash = passwordHash;    
             user.PasswordSalt = passwordSalt;
 
