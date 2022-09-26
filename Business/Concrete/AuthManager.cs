@@ -39,17 +39,20 @@ namespace Business.Concrete
         [ValidationAspect(typeof(UserValidator))]
         public IResult Register(RegisterAuthDto registerDto)
         {
-            int imgSize = 1;
 
-            //IResult result = BusinessRules.Run(
-            //    CheckIfEmailExists(registerDto.Email),
-            //    CheckIfImgLessThanOneMb(imgSize)
-            //    );
+            string fileName = registerDto.Image.FileName;
 
-            //if (!result.Success)
-            //{
-            //    return result;
-            //}
+            IResult result = BusinessRules.Run(
+                CheckIfEmailExists(registerDto.Email),
+                 CheckIfImgExtensionAllowed(fileName),
+            CheckIfImgLessThanOneMb(registerDto.Image.Length)
+                ); ;
+
+            if (result != null)
+            {
+                return result;
+            }
+
 
             _userService.Add(registerDto);
             return new SuccessResult("Registration successfull");
@@ -72,6 +75,17 @@ namespace Business.Concrete
             if (imgSize > 1)
             {
                 return new ErrorResult("Image too large! image size cannot be more than 1mb");
+            }
+            return new SuccessResult();
+        }
+
+        private IResult CheckIfImgExtensionAllowed(string fileName)
+        {
+            var extension = fileName.Substring(fileName.LastIndexOf(".")).ToLower();
+            List<string> AllowFileExtensions = new List<string> { ".jpg", ".jpeg", ".gif", ".png" };
+            if (!AllowFileExtensions.Contains(extension))
+            {
+                return new ErrorResult("Image file extension should be one of .jpg, .jpeg, .gif, .png");
             }
             return new SuccessResult();
         }
