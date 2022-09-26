@@ -46,7 +46,7 @@ namespace Business.Concrete
                 CheckIfEmailExists(registerDto.Email),
                  CheckIfImgExtensionAllowed(fileName),
             CheckIfImgLessThanOneMb(registerDto.Image.Length)
-                ); ;
+                );
 
             if (result != null)
             {
@@ -70,9 +70,10 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
-        private IResult CheckIfImgLessThanOneMb(int imgSize)
+        private IResult CheckIfImgLessThanOneMb(long imgSize)
         {
-            if (imgSize > 1)
+            decimal imgMbSize = Convert.ToDecimal(imgSize * 0.000001);
+            if (imgMbSize > 1)
             {
                 return new ErrorResult("Image too large! image size cannot be more than 1mb");
             }
