@@ -15,25 +15,35 @@ namespace Business.Concrete
     {
 
         public readonly IUserDal _userDal;
+        public readonly IFileService _fileService;
 
-        public UserManager(IUserDal userDal)
+        public UserManager(IUserDal userDal, IFileService fileService)
         {
             _userDal = userDal;
+            _fileService = fileService;
         }
 
-        public void Add(RegisterAuthDto authDto)
+        public async void Add(RegisterAuthDto registerDto)
+        {
+
+            string fileName = _fileService.FileSave(registerDto.Image, "./Content/Images/");
+            var user = CreateUser(registerDto, fileName);
+            _userDal.Add(user);
+        }
+
+
+        private User CreateUser(RegisterAuthDto registerDto, string fileName)
         {
             byte[] passwordHash, passwordSalt;
-            HashingHelper.CreatePassword(authDto.Password, out passwordHash, out passwordSalt);
+            HashingHelper.CreatePassword(registerDto.Password, out passwordHash, out passwordSalt);
             User user = new User();
             user.Id = 0;
-            user.Name = authDto.Name;
-            user.Email = authDto.Email;
-            user.ImageUrl = "";
-            user.PasswordHash = passwordHash;    
+            user.Name = registerDto.Name;
+            user.Email = registerDto.Email;
+            user.ImageUrl = fileName;
+            user.PasswordHash = passwordHash;
             user.PasswordSalt = passwordSalt;
-
-            _userDal.Add(user);
+            return user;
         }
 
         public User GetByEmail(string email)
