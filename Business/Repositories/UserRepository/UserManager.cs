@@ -1,5 +1,8 @@
-﻿using Business.Utilities.File;
+﻿using Business.Repositories.UserRepository.Constants;
+using Business.Utilities.File;
 using Core.Utilities.Hashing;
+using Core.Utilities.Result.Abstract;
+using Core.Utilities.Result.Concrete;
 using DataAccess.Repositories.UserRepository;
 using Entities.Concrete;
 using Entities.Dtos;
@@ -54,9 +57,26 @@ namespace Business.Repositories.UserRepository
             return result;
         }
 
-        public List<User> GetList()
+        public IResult Update(User user)
         {
-            return _userDal.GetAll();
+            _userDal.Update(user);
+            return new SuccessResult(Messages.UpdatedUser);
+        }
+
+        public IResult Delete(User user)
+        {
+            _userDal.Delete(user);
+            return new SuccessResult(Messages.DeletedUser);
+        }
+
+        IDataResult<List<User>> IUserService.GetList()
+        {
+            return new SuccessDataResult<List<User>>(_userDal.GetAll());
+        }
+
+        public IDataResult<User> GetById(int id)
+        {
+            return new SuccessDataResult<User>(_userDal.Get(p => p.Id == id));
         }
     }
 }

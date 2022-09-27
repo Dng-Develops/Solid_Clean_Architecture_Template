@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.Utilities.Result.Abstract;
+using Entities.Concrete;
 using Entities.Dtos;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,10 @@ namespace Business.Repositories.UserRepository
     public interface IUserService
     {
         void Add(RegisterAuthDto authDto);
-        List<User> GetList();
+        IResult Update(User user);
+        IResult Delete(User user);
+        IDataResult<List <User>> GetList();
         User GetByEmail(string email);
+        IDataResult<User> GetById(int id);
     }
 }
