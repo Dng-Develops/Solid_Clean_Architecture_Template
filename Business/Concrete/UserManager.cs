@@ -26,7 +26,9 @@ namespace Business.Concrete
         public async void Add(RegisterAuthDto registerDto)
         {
 
-            string fileName = _fileService.FileSave(registerDto.Image, "./Content/Images/");
+            string fileName = _fileService.FileSaveToServer(registerDto.Image, "./Content/Images/");
+            //byte[] fileByteArray = _fileService.FileConvertByteArrayToDatabase(registerDto.Image); // Use this if you wanna save images as byte array.
+            //string fileToFtp = _fileService.FileSaveToFtp(registerDto.Image); // Use this if you wanna save images using FTP.
             var user = CreateUser(registerDto, fileName);
             _userDal.Add(user);
         }
