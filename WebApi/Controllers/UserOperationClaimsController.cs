@@ -1,6 +1,5 @@
-﻿using Business.Abstract;
+﻿using Business.Repositories.UserOperationClaimRepository;
 using Entities.Concrete;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers

@@ -1,11 +1,6 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using Business.Abstract;
 using Business.Autofac;
-using Business.Concrete;
-using DataAccess.Abstract;
-using DataAccess.Concrete.EntityFramework;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Autofac configurations
