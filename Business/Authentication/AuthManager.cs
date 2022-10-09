@@ -29,7 +29,7 @@ namespace Business.Authentication
             return "User info is incorrect";
         }
 
-        [ValidationAspect(typeof(UserValidator))]
+        [ValidationAspect(typeof(AuthValidator))]
         public IResult Register(RegisterAuthDto registerDto)
         {
 
