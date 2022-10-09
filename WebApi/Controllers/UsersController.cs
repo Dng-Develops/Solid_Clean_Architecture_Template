@@ -21,8 +21,49 @@ namespace WebApi.Controllers
 
         public IActionResult GetList()
         {
-            
-            return Ok(_userService.GetList());
+            var result = _userService.GetList();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result.Message);
+        }
+
+
+        [HttpPost("update")]
+
+        public IActionResult Update(User user)
+        {
+            var result =  _userService.Update(user);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result.Message);
+        }
+
+        [HttpPost("delete")]
+
+        public IActionResult Delete(User user)
+        {
+            var result = _userService.Delete(user);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result.Message);
+        }
+
+        [HttpPost("changePassword")]
+
+        public IActionResult ChangePassword(UserChangePasswordDto userChangePasswordDto)
+        {
+            var result = _userService.ChangePassword(userChangePasswordDto);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result.Message);
         }
     }
 }
