@@ -1,5 +1,7 @@
 ﻿using Business.Repositories.UserRepository.Constants;
+using Business.Repositories.UserRepository.Validation.FluentValidation;
 using Business.Utilities.File;
+using Core.Aspects.Validation;
 using Core.Utilities.Hashing;
 using Core.Utilities.Result.Abstract;
 using Core.Utilities.Result.Concrete;
@@ -57,16 +59,17 @@ namespace Business.Repositories.UserRepository
             return result;
         }
 
+        [ValidationAspect(typeof(UserValidator))]
         public IResult Update(User user)
         {
             _userDal.Update(user);
-            return new SuccessResult(Messages.UpdatedUser);
+            return new SuccessResult(UserMessages.UpdatedUser);
         }
 
         public IResult Delete(User user)
         {
             _userDal.Delete(user);
-            return new SuccessResult(Messages.DeletedUser);
+            return new SuccessResult(UserMessages.DeletedUser);
         }
 
         IDataResult<List<User>> IUserService.GetList()
@@ -77,6 +80,25 @@ namespace Business.Repositories.UserRepository
         public IDataResult<User> GetById(int id)
         {
             return new SuccessDataResult<User>(_userDal.Get(p => p.Id == id));
+        }
+
+        public IResult ChangePassword(UserChangePasswordDto userChangePasswordDto)
+        {
+            var user = _userDal.Get(p => p.Id == userChangePasswordDto.UserId);
+            bool result = HashingHelper.VerifyPasswordHash(userChangePasswordDto.CurrentPassword, user.PasswordHash, user.PasswordSalt);
+            if (!result)
+            {
+                return new ErrorResult(UserMessages.WrongCurrentPassword);
+            }
+            byte[] passwordHash, passwordSalt;
+            HashingHelper.CreatePassword(userChangePasswordDto.NewPassword, out passwordHash, out passwordSalt);
+
+            user.PasswordHash = passwordHash;
+            user.PasswordSalt = passwordSalt;
+
+            _userDal.Update(user);
+
+            return new SuccessResult(UserMessages.PasswordChangedSuccess);
         }
     }
 }

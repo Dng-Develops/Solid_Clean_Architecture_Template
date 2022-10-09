@@ -14,6 +14,7 @@ namespace Business.Repositories.UserRepository
     {
         void Add(RegisterAuthDto authDto);
         IResult Update(User user);
+        IResult ChangePassword(UserChangePasswordDto userChangePasswordDto);
         IResult Delete(User user);
         IDataResult<List <User>> GetList();
         User GetByEmail(string email);
